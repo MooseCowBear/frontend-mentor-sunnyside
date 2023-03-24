@@ -1,7 +1,16 @@
 :root {
+  --primary-warm-100: hsl(7, 99%, 70%);
+  --primary-warm-200: hsl(51, 100%, 49%);
+  --primary-cool-100: hsl(168, 34%, 41%);
+  --primary-cool-200: hsl(167, 40%, 24%);
+  --primary-cool-300: hsl(198, 62%, 26%);
   
+  --neutral-dark-300: hsl(212, 27%, 19%);
+  --neutral-dark-200: hsl(213, 9%, 39%);
+  --neutral-light-300: hsl(232, 10%, 55%);
+  --neutral-light-200: hsl(210, 4%, 67%);
+  --neutral-light-100: hsl(0, 0%, 100%);
 }
-
 /* reset */
 *,
 *::before,
