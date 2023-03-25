@@ -158,21 +158,28 @@ main {
 }
 
 .main__section.text-only {
-  padding: 10vw; /* not right - probably need a div around the content so it can be right aligned inside and then give the whole thing a width*/
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2em;
+  align-items: center;
 }
 
-.main__section.text-only > h2 {
+.main__section.text-only > div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5vw;
+}
+
+.main__section.text-only h2 {
   color: var(--neutral-dark-300);
   font-size: 2.1rem;
   font-weight: 900;
   line-height: 1;
 }
 
-.main__section.text-only > a {
+.main__section.text-only a {
   font-family: "Fraunces", serif;
   text-transform: uppercase;
   color: var(--neutral-dark-300);
