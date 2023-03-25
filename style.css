@@ -71,6 +71,13 @@ a:not([class]) {
 body {
   font-size: 18px;
   font-family: "Barlow", sans-serif;
+  color: var(--neutral-light-300);
+}
+
+p {
+  opacity: 0.8;
+  font-size: 0.8em;
+  letter-spacing: 0.5px; /* this text seems thinner, check for a lighter weight that would match better */
 }
 
 a {
@@ -131,8 +138,12 @@ h1 {
   font-size: 2.5rem;
   font-weight: 900;
   text-transform: uppercase;
-  font-family: "Fraunces", serif;
   letter-spacing: 6px;
+}
+
+h1, h2, h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
 }
 
 .arrow {
@@ -140,3 +151,115 @@ h1 {
   left: 50%;
   top: 43%; /* can this be a calc depending on width? */
 }
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main__section.text-only {
+  padding: 10vw; /* not right - probably need a div around the content so it can be right aligned inside and then give the whole thing a width*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+
+.main__section.text-only > h2 {
+  color: var(--neutral-dark-300);
+  font-size: 2.1rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.main__section.text-only > a {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  color: var(--neutral-dark-300);
+  font-size: 0.9em;
+}
+
+.main__section.images-only {
+  display: flex;
+}
+
+.main__section.image-behind {
+  position: relative;
+}
+
+.position-absolute-copy {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5vw 25%;
+  gap: 1em;
+  color: var(--primary-cool-300);
+}
+
+.testimonials {
+  --gap: 3em;
+  grid-column: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap);
+  padding: 10vw 5vw;
+}
+
+.testimonials > h2 {
+  text-transform: uppercase; /* needs letter spacing and font size */
+  color: var(--neutral-light-200);
+  font-size: 1rem;
+  letter-spacing: 5px;
+}
+
+.testimonials__wrapper, .testimonials__section {
+  display: flex;
+}
+
+.testimonials__wrapper {
+  gap: var(--gap);
+  margin: 0 5vw;
+}
+
+.testimonials__section {
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap);
+  text-align: center;
+}
+
+.testimonials__section > img {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonials__section > p {
+  line-height: 1.7;
+  opacity: 1;
+}
+
+.testimonials__section > div {
+  opacity: 1;
+}
+
+.testimonials__name {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: var(--neutral-dark-300);
+}
+
+.testimonials__occupation {
+  font-size: 0.6em;
+  color: var(--neutral-light-300);
+}
+
+footer {
+  background-color: var(--primary-cool-100);
+}
+
