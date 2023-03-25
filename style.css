@@ -70,9 +70,73 @@ a:not([class]) {
 
 body {
   font-size: 18px;
-  font-family: "Barlow", serif;
+  font-family: "Barlow", sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+}
+
+.header__content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 3vw;
+  color: var(--neutral-light-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.header__top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: inherit;
+  opacity: 0.8;
+  font-size: 0.8em;
+}
+
+button {
+  font-family: "Fraunces", serif;
+  font-size: 0.7em;;
+  border: transparent;
+  padding: 1em 1.5em;
+  background-color: var(--neutral-light-100);
+  text-transform: uppercase;
+  border-radius: 2em;
+}
+
+.header__left-desktop {
+  display: flex;
+  gap: 3vw;
+  align-items: center;
+}
+
 .header__left-mobile {
   display: none;
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  letter-spacing: 6px;
+}
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  top: 43%; /* can this be a calc depending on width? */
+}
