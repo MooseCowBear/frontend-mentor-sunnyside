@@ -268,7 +268,8 @@ main {
 
 footer {
   background-color: var(--primary-cool-100);
-  filter: brightness(150%);
+  filter: brightness(140%);
+  opacity: 1;
 }
 
 .footer__links {
@@ -281,7 +282,6 @@ footer {
 }
 
 .footer__links > img {
-  /* need filter */
   filter: brightness(0) saturate(100%) invert(26%) sepia(16%) saturate(1341%) hue-rotate(116deg) brightness(96%) contrast(87%);
 }
 
@@ -292,14 +292,15 @@ footer {
 
 footer a {
   color: var(--primary-cool-200);
-  filter: brightness(75%); /* needs adjustment - close */
+  filter: brightness(70%); /* needs adjustment - close */
   font-size: 0.8em;
+  opacity: 0.6;
 }
 
 .footer__icons {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  filter: brightness(75%);
+  filter: brightness(70%);
   padding: 0rem 0 3rem 0;
 }
