@@ -264,12 +264,38 @@ footer {
   filter: brightness(150%);
 }
 
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.footer__links > img {
+  /* need filter */
+}
+
+.footer__links > div {
+  display: flex;
+  gap: 3rem;
+}
+
 footer a {
   color: var(--primary-cool-200);
   filter: brightness(75%); /* needs adjustment - close */
+  font-size: 0.8em;
 }
 
 .footer__icons {
   display: flex;
+  justify-content: center;
+  gap: 1.5rem;
   filter: brightness(75%);
+  padding: 0rem 0 3rem 0;
+}
+
+.attribution {
+
 }
