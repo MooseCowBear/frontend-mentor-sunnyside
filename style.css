@@ -1,7 +1,7 @@
 :root {
   --primary-warm-100: hsl(7, 99%, 70%);
   --primary-warm-200: hsl(51, 100%, 49%);
-  --primary-cool-100: hsl(168, 34%, 41%);
+  --primary-cool-100: hsla(168, 34%, 41%, 0.7);
   --primary-cool-200: hsl(167, 40%, 24%);
   --primary-cool-300: hsl(198, 62%, 26%);
   
@@ -261,5 +261,15 @@ main {
 
 footer {
   background-color: var(--primary-cool-100);
+  filter: brightness(150%);
 }
 
+footer a {
+  color: var(--primary-cool-200);
+  filter: brightness(75%); /* needs adjustment - close */
+}
+
+.footer__icons {
+  display: flex;
+  filter: brightness(75%);
+}
