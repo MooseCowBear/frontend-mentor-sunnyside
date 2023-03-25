@@ -68,6 +68,11 @@ a:not([class]) {
 }
 /* end reset */
 
+body {
+  font-size: 18px;
+  font-family: "Barlow", serif;
+}
 .header__left-mobile {
   display: none;
 }
+
