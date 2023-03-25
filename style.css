@@ -282,6 +282,7 @@ footer {
 
 .footer__links > img {
   /* need filter */
+  filter: brightness(0) saturate(100%) invert(26%) sepia(16%) saturate(1341%) hue-rotate(116deg) brightness(96%) contrast(87%);
 }
 
 .footer__links > div {
@@ -301,8 +302,4 @@ footer a {
   gap: 1.5rem;
   filter: brightness(75%);
   padding: 0rem 0 3rem 0;
-}
-
-.attribution {
-
 }
