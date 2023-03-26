@@ -98,7 +98,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5rem;
+  justify-content: center;
+  text-align: center;
+  gap: 10vw;
 }
 
 .header__top {
@@ -150,11 +152,13 @@ h1, h2, h3 {
   position: absolute;
   left: 50%;
   top: 43%; /* can this be a calc depending on width? */
+  transform: translateX(-50%);
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: 100vw;
 }
 
 .main__section.text-only {
@@ -201,8 +205,8 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 5vw 25%;
-  gap: 1em;
+  padding: 5vw 10vw;
+  gap: 3vw;
   color: var(--primary-cool-300);
 }
 
@@ -292,7 +296,7 @@ footer {
 
 footer a {
   color: var(--primary-cool-200);
-  filter: brightness(70%); /* needs adjustment - close */
+  filter: brightness(70%); 
   font-size: 0.8em;
   opacity: 0.6;
 }
@@ -303,4 +307,77 @@ footer a {
   gap: 1.5rem;
   filter: brightness(70%);
   padding: 0rem 0 3rem 0;
+}
+
+@media screen and (max-width: 800px){
+  .position-absolute-copy {
+    padding: 5% 5%;
+  }
+
+  .header__content {
+    gap: 5vw;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials {
+    grid-column: 1;
+  }
+
+  .header__content {
+    padding: 1rem;
+    gap: 15vw;
+  }
+
+  h1 {
+    font-size: 10vw;
+    line-height: 1.2;
+  }
+
+  .header__left-desktop {
+    display: none;
+  }
+
+  .header__left-mobile {
+    display: block;
+  }
+
+  .main__section.text-only {
+    text-align: center;
+    padding: 4rem 0;
+  }
+
+  .main__section.text-only > div {
+    width: 80%;
+    gap: 2rem;
+  }
+
+  .mobile__first {
+    grid-row: 1;
+  }
+
+  .position-absolute-copy {
+    bottom: 8%;
+    padding: 5% 5%;
+  }
+
+  /* need to adjust size of header for graphic design, photography ALSO FOR 736px text gets too far up img*/
+
+  .testimonials {
+    text-align: center;
+    padding: 15vw 5vw;
+  }
+
+  .testimonials__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonials__section {
+    gap: 1em;
+  }
 }
