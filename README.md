@@ -11,12 +11,11 @@ Users should be able to:
 
 ## Screenshots
 
-![alt text](screenshots/screenshot-desktop1.png "sunnyside agency landing page")
-![alt text](screenshots/screenshot-desktop2.png "sunnyside agency landing page")
-![alt text](screenshots/screenshot-desktop3.png "sunnyside agency landing page")
-![alt text](screenshots/screenshot-desktop4.png "sunnyside agency landing page")
-![alt text](screenshots/screenshot-desktop5.png "sunnyside agency landing page")
-![alt text](screenshots/screenshot-desktop6.png "sunnyside agency landing page")
+![alt text](screenshots/desktop1.png "sunnyside agency landing page")
+![alt text](screenshots/desktop2.png "sunnyside agency landing page")
+![alt text](screenshots/desktop3.png "sunnyside agency landing page")
+![alt text](screenshots/desktop4.png "sunnyside agency landing page")
+![alt text](screenshots/desktop5.png "sunnyside agency landing page")
 
 ## Links
 
