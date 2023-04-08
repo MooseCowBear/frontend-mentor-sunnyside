@@ -309,7 +309,7 @@ footer a {
   padding: 0rem 0 3rem 0;
 }
 
-@media screen and (max-width: 800px){
+@media only screen and (max-width: 800px){
   .position-absolute-copy {
     padding: 5% 5%;
   }
@@ -331,6 +331,7 @@ footer a {
   .header__content {
     padding: 1rem;
     gap: 15vw;
+    margin: 1em 0;
   }
 
   h1 {
